@@ -167,3 +167,13 @@ Entrypoint foo = foo.js
 [./src/bar.js] 34 bytes {foo} [built]
 [./src/foo.js] 169 bytes {foo} [built]
 ```
+
+Runtime error:
+```
+11:21:18.752 foo.js:11 Uncaught TypeError: Object(...) is not a function
+    at eval (foo.js:11)
+    at Module../src/foo.js (foo.js:108)
+    at __webpack_require__ (foo.js:20)
+    at foo.js:84
+    at foo.js:87
+```
